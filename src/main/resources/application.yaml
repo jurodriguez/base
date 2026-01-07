@@ -1,8 +1,8 @@
 spring:
   r2dbc:
-    url: "${DB_URL:r2dbc:pool:mysql://localhost:3306/bank_db}"
-    username: "${DB_USERNAME:root}"
-    password: "${DB_PASSWORD:root}"
+    url: "r2dbc:pool:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}"
+    username: "${MYSQLUSER}"
+    password: "${MYSQLPASSWORD}"
   application:
     name: base
 
