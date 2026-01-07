@@ -1,13 +1,13 @@
-package com.example.base.domain.exceptions;
+package com.example.prioritization.domain.exceptions;
 
-import com.example.base.domain.model.CustomerError;
+import com.example.prioritization.domain.model.RequestError;
 
 public class BusinessException extends RuntimeException {
 
     private final String code;
-    private final CustomerError error;
+    private final RequestError error;
 
-    public BusinessException(CustomerError error) {
+    public BusinessException(RequestError error) {
         super(error.getMessage());
         this.code = error.getCode();
         this.error = error;
@@ -15,5 +15,5 @@ public class BusinessException extends RuntimeException {
 
     public String getCode() { return code; }
 
-    public CustomerError getError() { return error; }
+    public RequestError getError() { return error; }
 }

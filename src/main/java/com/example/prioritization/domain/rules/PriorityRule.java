@@ -1,4 +1,4 @@
-package com.example.prioritization.rules;
+package com.example.prioritization.domain.rules;
 
 import com.example.prioritization.domain.model.Request;
 

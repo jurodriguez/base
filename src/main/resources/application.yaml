@@ -1,11 +1,6 @@
 spring:
   application:
-    name: base
-
-  r2dbc:
-    url: ${DB_URL:r2dbc:h2:mem:///testdb}
-    username: ${DB_USERNAME:sa}
-    password: ${DB_PASSWORD:}
+    name: prioritization
 
 server:
   port: ${PORT:8080}

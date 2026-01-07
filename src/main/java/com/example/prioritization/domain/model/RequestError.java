@@ -1,15 +1,13 @@
 package com.example.prioritization.domain.model;
 
-public enum CustomerError {
+public enum RequestError {
 
-    NAME_REQUIRED("CLI-001", "Name is required"),
-    INVALID_PHONE("CLI-002", "Invalid phone number"),
-    CUSTOMER_NOT_FOUND("CLI-404", "Customer not found");
+    INVALID_REQUEST_TYPE("REQ-001", "Request type is not supported");
 
     private final String code;
     private final String message;
 
-    CustomerError(String code, String message) {
+    RequestError(String code, String message) {
         this.code = code;
         this.message = message;
     }
