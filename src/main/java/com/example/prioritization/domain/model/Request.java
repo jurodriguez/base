@@ -1,4 +1,4 @@
-package com.example.base.domain.model;
+package com.example.prioritization.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
