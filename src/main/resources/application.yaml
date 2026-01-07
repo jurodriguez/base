@@ -1,0 +1,10 @@
+spring:
+  r2dbc:
+    url: "${DB_URL:r2dbc:pool:mysql://localhost:3306/bank_db}"
+    username: "${DB_USERNAME:root}"
+    password: "${DB_PASSWORD:root}"
+  application:
+    name: base
+
+server:
+  port: "${PORT:8080}"
