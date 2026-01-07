@@ -1,10 +1,11 @@
 spring:
-  r2dbc:
-    url: "r2dbc:pool:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}"
-    username: "${MYSQLUSER}"
-    password: "${MYSQLPASSWORD}"
   application:
     name: base
 
+  r2dbc:
+    url: ${DB_URL:r2dbc:h2:mem:///testdb}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+
 server:
-  port: "${PORT:8080}"
+  port: ${PORT:8080}

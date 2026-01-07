@@ -27,7 +27,7 @@ dependencies {
 
     // R2DBC
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
-    implementation 'dev.miku:r2dbc-mysql'
+    implementation "dev.miku:r2dbc-mysql:0.8.2.RELEASE"
 
     // JDBC (solo si Flyway / Liquibase / metadata)
     runtimeOnly 'com.mysql:mysql-connector-j:8.4.0'
